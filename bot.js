@@ -13,5 +13,11 @@ client.on('message', message => {
     }
 });
 
+client.on('message', message => {
+    if (message.content === 'stop') { 
+      var interval = clearInterval (1); 
+    }
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
