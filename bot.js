@@ -12,7 +12,7 @@ client.on('message', message => {
       }, 20 * 1000,
 		client.on('message', message => {
 			if (message.content === 'stop') { 
-				var interval = clearInterval (1); 
+				var interval = clearInterval (); 
 											}
 										})); 
 									}
